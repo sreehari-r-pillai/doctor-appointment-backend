@@ -1,0 +1,1 @@
+import { IsDateString, IsMongoId, IsOptional, IsString } from 'class-validator'; export class CreateAppointmentDto{ @IsMongoId() doctorId:string; @IsMongoId() patientId:string; @IsDateString() startTime:string; @IsOptional() @IsString() notes?:string;}

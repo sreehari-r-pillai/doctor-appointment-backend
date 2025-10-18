@@ -1,0 +1,1 @@
+export class CreateUserDto{ email:string; passwordHash:string; role:'ADMIN'|'DOCTOR'|'PATIENT'; }

@@ -1,0 +1,1 @@
+import { Injectable } from '@nestjs/common'; @Injectable() export class PrescriptionsService{ async saveMeta(file:Express.Multer.File, body:any, user:any){ return { filename:file.filename, size:file.size, mimetype:file.mimetype, uploadedBy:user.email, meta:body }; }}
